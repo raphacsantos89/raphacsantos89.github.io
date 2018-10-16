@@ -1,0 +1,694 @@
+/* ----- GERAL ----- */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+a {
+	text-decoration: none;
+}
+
+/* ----- CABECALHO ----- */
+header {
+	width: 400px;
+	height: 550px;
+	background: url(../img/banner.png);	 	
+	background-position: right;
+	background-clip: border-box;
+}
+.cabecalho {
+	width: 100%;
+	height: 550px;
+}
+.logo {
+	width: 92px;
+	height: 79px;
+	background: url(../img/Logo.png);
+	background-position: center;
+	margin: auto;
+	padding-top: 30px; 
+}
+.apresentacao {
+	display: block;
+	text-align: center;
+	margin-top: 94px;
+}
+.apresentacao h2 {
+	font-family: 'Lobster';
+	font-size: 56px;
+	color: #fff;
+}
+.apresentacao h3 {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 2.6px;
+}
+.apresentacao h4 {
+	margin-left: 100px; 
+	margin-top: 60px;
+	font-family: 'Poppins';
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;	
+	letter-spacing: 5px;
+	width: 200px;
+	height: 40px;
+	border: 2px solid #fff;
+	border-radius: 21px;
+	text-align: center;
+	line-height: 43px;	
+}
+.apresentacao h5 {
+	font-family: 'Poppins';
+	font-weight: lighter;
+	font-size: 11px;
+	color: #fff;
+	letter-spacing: 4px;
+	margin-top: 18px;
+}
+.apresentacao i {
+	width: 19px;
+	height: 11px;
+	color: #fff;
+}
+.menu {
+	display: block;
+	width: 100%;
+	height: 45px;
+	margin-top: 79px;
+	border-radius: 56px;
+	background: linear-gradient(to right, #1aab80, #8fc3b1);
+	opacity: 50%;
+	line-height: 44px;
+	text-align: left;	
+}
+.btn-suites {
+	display: block;
+}
+.btn-local {
+	display: block;
+}
+.menu p {
+	float: left;
+	width: 44px;
+	height: 17px;
+	font-size: 12px;
+	font-family: 'Poppins';
+	font-weight: normal;
+	color: #fff;
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+.menu img {
+	float: left;
+	margin-left: 18px;
+	margin-top: 15px;
+}
+.btn-local p {
+	width: 91px; 
+}
+.btn-menu {	
+	display: block; 	
+	font-size: 12px;
+	font-family: 'Poppins';
+	text-decoration: none;
+	width: 84px;
+	height: 40px;
+	float: right;
+	border: none;
+	text-align: center;
+	color: #fff;
+	border-radius: 56px;
+	cursor: pointer;
+	background-color: #1aab80;
+	margin-right: 5px;
+	margin-top: -42.7px;
+}
+.btn-menu span {
+	font-size: 12px;
+	font-family: 'Poppins';
+	font-weight: normal;
+	color: #fff;
+	margin-left: 10px;
+}
+
+/* ----- CONTEUDO ----- */
+main {
+	margin-top: 43px;
+	width: 100%;
+	background-image: url(../img/quartos.png);
+	background-repeat: no-repeat;
+	background-position: top;
+}
+body{
+  text-align: center;
+}
+.suite {
+	width: 100%;
+	height: 315px;
+	display: inline;
+	float: left;
+	overflow: hidden;	
+}
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list{--selected-item: 0;}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list{--selected-item: 1;}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list{--selected-item: 2;}
+.slide-controller:nth-child(4):checked ~ .slide-show .slides-list{--selected-item: 3;}
+ input {
+ 	margin-top: 90px;
+}
+.slide-show {
+	overflow: hidden;
+}
+.slides-list {
+	--selected-item: 0;
+	--total-items: 4;
+	list-style-type: none;
+	margin: 10px 0;
+	padding: 0;
+	position: relative;
+	left: calc(var(--selected-item) * -100%);
+	width: calc(var(--total-items) * 100%);
+	transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);	  
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 1fr;
+}
+.slide img {
+	margin: 15px 80px 0 80px;
+}
+.slide h1 {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	color: #2f9977;
+	text-align: center;
+	letter-spacing: 2px;
+	width: 190px;
+	margin: 25px auto 0 auto;
+}
+.slide p {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	text-align: center;
+	color: #a8a8a8;
+	letter-spacing: 2px;
+	margin-top: 5px;
+}
+.slide h2 {
+	margin: 22px auto 0 auto; 
+	font-family: 'Poppins';
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 38px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	width: 243px;
+	height: 38px;
+	opacity: 40%;
+	background-color: #208b52;
+	border-radius: 28px;
+	background: linear-gradient(to bottom, #6abaa1, #208b52);  
+}
+
+/* ----- SOBRE ----- */
+.sobre-site {
+	display: none;
+}
+.sobre {
+	position: relative;
+	margin-top: 58px;
+	width: 100%;
+	height: 257px;
+	background-image: url(../img/fachada.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 100%;
+}
+.info img {	
+	left: 0;
+	margin-left: 150px;
+}
+.info img {
+	position: absolute;
+	top: -40px;
+}
+.info h1 {
+	font-size: 20px;
+	font-family: 'Montserrat';
+	font-weight: lighter;
+	color: #fff;
+	padding-top: 95px;
+	margin: 0 78px 0 79px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.info h4 {
+	margin: 29px auto;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Poppins';
+	color: #fff;
+	width: 198px;
+	height: 40px;
+	line-height: 43px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	text-align: center;
+	letter-spacing: 2px;	
+}
+
+/* ----- CUPOM ----- */
+.cupom {
+	padding: 0 80px 0 80px;
+	margin: 0 60px 10px 90px;
+}
+.desconto h2 {
+	font-family: 'Montserrat';
+	font-size: 16px;
+	text-align: center;
+	color: #33b08a;
+	letter-spacing: 2px;
+}
+.desconto h2 span {
+	font-weight: bolder;
+}
+.desconto h3 {
+	font-size: 14px;
+	font-weight: medium;
+	font-family: 'Montserrat';
+	color: #a8a8a8;
+	margin: 50px auto 12px auto;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.desconto h1 {
+	font-family: 'Montserrat';
+	font-size: 18px;
+	text-align: center;
+	color: #2f9977;
+	letter-spacing: 2px;
+	margin: 0 auto;
+}
+.desconto h4 {
+	width: 200px;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	text-align: center;
+	color: #a8a8a8;
+	letter-spacing: 2px;
+	margin: 22px auto 0;
+}
+.desconto h6 {
+	width: 240px;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	text-align: center;
+	color: #a8a8a8;
+	letter-spacing: 2px;
+	margin: 22px auto 0;
+}
+.desconto img {
+	position: relative;
+	float: left;
+	margin-top: 50px;
+	margin-left: 73px;
+}
+.desconto button {
+	border: none;
+	background-color: #fff;
+	font-size: 14px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #19906c;
+	margin-top: 10px;
+	padding: 15px;
+	border-bottom: 4px solid #2f9977;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.desconto button img {
+	margin: 0 10px 0 0;
+}
+.info-desc {
+	display: none;
+}
+
+/* ----- RODAPÉ ----- */
+.criacao {
+	display: none;
+}
+.conjunto2 {
+	display: none;
+}
+.conjunto1 {
+	width: 100%;
+	height: 285px;
+	margin-top: 30px;
+	opacity: 100%;
+	background: linear-gradient(to bottom, #8FC3B1, #1AAB80);
+}
+.foot {
+	padding-top: 20px;
+	margin: 0 50px 0;
+}
+.foot h5 {	
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Poppins';
+	color: #fff;
+	width: 300px;
+	height: 43px;
+	line-height: 43px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.face {
+	margin: 25px 185px 27px;
+}
+.dev {
+	font-family: 'Poppins';
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #8E8E8E;
+	text-align: center;
+	margin: 20px auto 11px auto;
+}
+
+/* ------ MEDIA QUERY ----- */
+@media(min-width: 800px) {
+	#container {		
+		width: 1366px;
+		margin: auto;
+	}
+
+	/* CABEÇALHO */
+	.logo {		
+		float: left;
+		margin-top: 44px;
+		margin-left: 154px;
+	}
+	.cabecalho {
+		width: 1366px;
+		height: 743px;
+	}
+	.apresentacao {
+		margin: 0;
+	}
+	.apresentacao h2 {
+		font-family: 'Lobster';
+		font-size: 103px;
+		color: #fff;
+		margin: 0 495px;
+		padding-top: 267px;
+	}
+	.apresentacao h3 {
+		width: 300px;
+		font-family: 'Montserrat';
+		font-size: 24px;
+		color: #fff;
+		margin: 0 550px;
+		letter-spacing: 10px;
+	}
+	.apresentacao h4 {
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 14px;
+		color: #fff;
+		margin: 112px 584px 90px; 
+		letter-spacing: 5px;
+		width: 198px;
+		height: 43px;
+		border: 2px solid #fff;
+		border-radius: 25px;
+		text-align: center;
+		line-height: 43px;	
+	}
+	.apresentacao h5 {
+		width: 150px;
+		font-family: 'Poppins';
+		font-weight: lighter;
+		font-size: 11px;
+		color: #fff;
+		margin: 0 618px;
+		letter-spacing: 5px;
+	}
+	.menu {
+		display: none;
+	}
+	.btn-menu {
+		display: block;
+		position: relative;
+		top: -618px;
+		right: 67px;		
+		font-size: 12px;		
+		text-decoration: none;
+		width: 155px;
+		height: 56px;		
+		border: none;
+		text-align: center;
+		color: #fff;
+		border-radius: 28px;
+		cursor: pointer;
+		background: linear-gradient(to right, #6ABAA1, #208B52);
+		margin: ;
+
+	}
+	.btn-menu span {
+		font-size: 16px;
+		float: left;
+		padding-right: 30px;
+	}
+	.btn-suites {
+		display: none;
+	}
+	.btn-local {
+		display: none;
+	}
+
+	/* CONTEÚDO */
+	main {
+		display: block;
+		margin: 43px auto;
+		width: 1092px;
+		height: 412px;
+		background-image: url(../img/quartos.png);
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+	.servicos {
+		width: 1092px;
+		margin: 0 auto;
+	}
+
+	input {
+ 		display: none;
+	}
+	.slide-show {
+		overflow: visible;
+	}
+	.slides-list {
+		width: 1092px;
+	}
+	.slide {
+		width: 244px;
+		height: 315px;
+		display: inline-block;
+		margin: 140px 10px 0 10px;
+	}
+	.slide img {
+		margin: 0;
+	}
+	.slide h1 {
+		width: 244px;
+		font-family: 'Montserrat';
+		font-size: 16px;
+		color: #2f9977;
+		text-align: center;
+		letter-spacing: 2px;
+		margin-top: 25px;
+	}
+	.slide p {
+		font-family: 'Montserrat';
+		font-size: 14px;
+		text-align: center;
+		color: #a8a8a8;
+		letter-spacing: 2px;
+		margin-top: 5px;
+	}
+	.slide h2 {
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 38px;
+		color: #fff;
+		text-align: center;
+		letter-spacing: 2px;
+		width: 244px;
+		height: 38px;
+		opacity: 40%;
+		background-color: #208b52;
+		border-radius: 28px;
+		margin-top: 22px;
+		background: linear-gradient(to bottom, #6abaa1, #208b52);  
+	}
+
+	/* INFORMAÇÕES */
+	.info {
+		display: none;
+	}
+	.sobre {
+		width: 993px;		
+		height: 304px;		
+		margin: 110px auto;
+		background-image: url(../img/fachada.png);
+		background-repeat: no-repeat;
+		background-position: right;	
+	}
+	.sobre img {
+		float: right;
+	}
+	.sobre-site {
+		display: block;
+	}
+	.sobre-site h1 {
+		font-size: 18px;
+		font-weight: medium;
+		font-family: 'Montserrat';
+		color: #19906c;
+		width: 435px;
+		padding-top: 30px;
+		text-align: left;
+		letter-spacing: 2px;
+	}
+	.sobre-site p {
+		font-size: 18px;
+		font-weight: medium;
+		font-family: 'Montserrat';
+		color: #9e9e9e;
+		width: 435px;
+		text-align: left;
+		letter-spacing: 2px;
+		margin-top: 24px;
+	}
+
+	/* CUPOM */
+	.desconto {		
+		width: 1366px;
+		height: 710px;
+		margin-bottom: 233px;
+		background-color: #f5f5f5;
+		background-image: url(../img/cupom.png);
+		background-repeat: no-repeat;
+		background-position: top;
+	}
+	.cupom {
+		display: none;
+	}
+	.desconto h2 {
+		padding-top: 100px;
+	}
+	.cortesia {
+		display: inline-block;
+		text-align: center;
+		background-color: #fff;
+		margin-top: 64px;
+		width: 352px;
+		height: 280px;
+	}	
+	.aniver {
+		display: inline-block;
+		text-align: center;
+		background-color: #fff;
+		margin-top: 64px;
+		margin-left: 50px;
+		width: 352px;
+		height: 350px;
+	}
+	.info-desc {
+		display: block;		
+	} 
+	.info-desc p {
+		font-size: 14px;
+		font-weight: medium;
+		font-family: 'Montserrat';
+		color: #9e9e9e;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	.info-desc a {
+		text-decoration: none;
+		font-family: 'Poppins';
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 46px;
+		color: #fff;
+		text-align: center;
+		letter-spacing: 2px;
+		width: 220px;
+		height: 46px;
+		opacity: 40%;	
+		border-radius: 23px;
+		padding: 10px 26px 11px 25px;
+		background: linear-gradient(to right, #43E8B6, #33B08A);
+	}
+
+	/* RODAPÉ */
+	.conjunto1 {
+		display: none;
+	}
+	footer {
+		position: relative;
+	}
+	.conjunto2 {
+		position: absolute;
+		z-index: 1;
+		display: block;		
+		background-color: #fff;
+		width: 1066px;
+		height: 360px;
+		margin: auto;
+		margin-bottom: 91px;
+		top: -200px;
+		left: 140px;
+	}
+	.informacoes {
+		display: inline-block;
+		float: left;
+		text-align: left;
+		width: 245px;
+		height: 161px;
+		margin-top: 150px;
+		margin-left: 20px;
+	}
+	.informacoes:nth-child(1) {
+		margin-left: 103px;
+	}
+	.informacoes:nth-child(2) {
+		width: 150px;
+	}
+	.criacao {
+		position: relative;
+		display: block;	
+		width: 1366px;
+		height: 230px;		
+		background: linear-gradient(to bottom, #6abaa1, #208b52); 
+	}
+	.criacao p {
+		text-align: center;
+		color: #fff;
+		font-family: 'Poppins';
+		font-size: 14px;
+		letter-spacing: 2px;
+		padding-top: 190px;
+	}
+	.social {
+		float: left;
+		margin-left: 103px;
+	}
+}
